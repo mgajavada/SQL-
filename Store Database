@@ -1,0 +1,12 @@
+CREATE TABLE store_inventory (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER); 
+
+INSERT INTO store_inventory VALUES (1, "t-shirts", 14.99, 35); 
+INSERT INTO store_inventory VALUES (2, "pants", 44.99, 20); 
+INSERT INTO store_inventory VALUES (3, "sweaters", 59.99, 12); 
+INSERT INTO store_inventory VALUES (4, "jackets", 65.99, 6); 
+INSERT INTO store_inventory VALUES (5, "socks", 5.99, 11); 
+
+
+SELECT * FROM store_inventory WHERE price >0 ORDER BY price; 
+
+SELECT SUM (price*quantity) FROM store_inventory; 
